@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapi.com/ccs2?family=Roboto&display=swap");
+
+/*
+Steps
+1. Add universal rules
+2. Add body margin, font and allign all text to the center
+3. define nav styling, border, border-radius, margin,max-width, line-height
+4. style the header: padding, background and border-radius color
+5. style the ul to remove the bullet points
+6. style each li element to define the borders
+7. Style each li element (excpet for the one outside the menu):
+to have dark colors by default and when visited.
+8. and to have light color with dark background when hovered on
+
+*/
