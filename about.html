@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – Emin Sengül</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <header>
+    <h1>About Me</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        Hello! My name is <strong>Emin Sengül</strong>. 
+        I am 22 years old and originally from Germany. 
+        I love exploring new technologies, working on startups, 
+        and staying active with fitness and running.
+      </p>
+    </section>
+
+    <section id="hobbies">
+      <h3>Hobbies & Interests</h3>
+      <ul>
+        <li>Programming and creating innovative projects</li>
+        <li>Running and preparing for marathons</li>
+        <li>Cooking and experimenting with new recipes</li>
+      </ul>
+    </section>
+
+    <section id="books">
+      <h3>Favorite Books</h3>
+      <ol>
+        <li>
+          <a 
+            href="https://en.wikipedia.org/wiki/The_Lean_Startup" 
+            target="_blank"
+          >
+            The Lean Startup by Eric Ries
+          </a>
+        </li>
+        <li>
+          <a 
+            href="https://jamesclear.com/atomic-habits" 
+            target="_blank"
+          >
+            Atomic Habits by James Clear
+          </a>
+        </li>
+        <li>
+          <a 
+            href="https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind"
+            target="_blank"
+          >
+            Sapiens by Yuval Noah Harari
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="education">
+      <h3>Education & Work Experience</h3>
+      <p>
+        I am currently studying <strong>Computer Science</strong> at DHBW Mosbach 
+        and have completed several internships in software development. 
+        I enjoy discovering new technologies, especially in web development 
+        and AI.
+      </p>
+    </section>
+
+    <section id="map">
+      <h3>My Hometown</h3>
+      <p>Below is a map of my hometown:</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98234.11067809514!2d8.686032900177052!3d51.727577587483744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ba4c9661611ddb%3A0x73cc872a58ef22ee!2sPaderborn!5e1!3m2!1sde!2sde!4v1737128132835!5m2!1sde!2sde"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+  </main>
+
+  <button onclick="topFunction()" id="backToTopBtn" title="Back to top">↑</button>
+
+  <footer>
+    <p>
+      Follow me on
+      <a 
+        href="https://www.linkedin.com/in/emin-seng%C3%BCl-a787b6219/" 
+        target="_blank"
+      >
+        <img 
+          src="images/linkedin_logo.png" 
+          alt="LinkedIn Logo" 
+          class="social-icon"
+        >
+      </a>
+    </p>
+    <p>&copy; 2025 Emin Sengül. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      const btn = document.getElementById("backToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>

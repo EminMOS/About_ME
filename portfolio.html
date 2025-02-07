@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – Emin Sengül</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="movies">
+      <h2>Favorite Movies</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Release Year</th>
+            <th>IMDb</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Dark Knight</td>
+            <td>Christopher Nolan</td>
+            <td>2008</td>
+            <td>
+              <a 
+                href="https://www.imdb.com/title/tt0468569/" 
+                target="_blank"
+              >
+                Link
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Inception</td>
+            <td>Christopher Nolan</td>
+            <td>2010</td>
+            <td>
+              <a 
+                href="https://www.imdb.com/title/tt1375666/" 
+                target="_blank"
+              >
+                Link
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Iron Man</td>
+            <td>Jon Favreau</td>
+            <td>2008</td>
+            <td>
+              <a 
+                href="https://www.imdb.com/title/tt0371746/" 
+                target="_blank"
+              >
+                Link
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <p>
+        Check out my prototype for my  
+        <a href="https://www.founder-fusion.com" target="_blank">
+          startup
+        </a>, for more inspiration. 
+        You can also see more personal projects on my
+        <a href="https://github.com" target="_blank">GitHub</a>.
+      </p>
+    </section>
+
+    <section id="videos">
+      <h2>Videos I Enjoy</h2>
+      <p>I find this video quite interesting:</p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/gs8qfL9PNac"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+  </main>
+
+  <button onclick="topFunction()" id="backToTopBtn" title="Back to top">↑</button>
+
+  <footer>
+    <p>
+      Follow me on
+      <a 
+        href="https://www.linkedin.com/in/emin-seng%C3%BCl-a787b6219/" 
+        target="_blank"
+      >
+        <img 
+          src="images/linkedin_logo.png" 
+          alt="LinkedIn Logo" 
+          class="social-icon"
+        >
+      </a>
+    </p>
+    <p>&copy; 2025 Emin Sengül. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      const btn = document.getElementById("backToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+</html>

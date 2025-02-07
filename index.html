@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home – Emin Sengül</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header>
+    <h1>Welcome to My Page</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section>
+      <h2>Hello and Welcome!</h2>
+      <p>
+        This is my personal website where you can learn more about me, 
+        my hobbies, and my projects. Feel free to explore the navigation links 
+        above to find out more.
+      </p>
+    </section>
+  </main>
+
+
+  <button onclick="topFunction()" id="backToTopBtn" title="Back to top">↑</button>
+
+
+  <footer>
+    <p>
+      Follow me on
+      <a 
+        href="https://www.linkedin.com/in/emin-seng%C3%BCl-a787b6219/" 
+        target="_blank"
+      >
+        <img 
+          src="images/linkedin_logo.png" 
+          alt="LinkedIn Logo" 
+          class="social-icon"
+        >
+      </a>
+    </p>
+    <p>&copy; 2025 Emin Sengül. All Rights Reserved.</p>
+  </footer>
+
+
+  <script>
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      const btn = document.getElementById("backToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    }
+
+
+    function topFunction() {
+      document.body.scrollTop = 0; 
+      document.documentElement.scrollTop = 0; 
+    }
+  </script>
+</body>
+</html>
